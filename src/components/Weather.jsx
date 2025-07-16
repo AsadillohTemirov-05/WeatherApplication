@@ -130,7 +130,8 @@ const Weather = () => {
           })}
         </div>
       </div>
-    </div>
+    </div>    
+    
   )
 }
 
