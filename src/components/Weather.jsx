@@ -11,10 +11,13 @@ import snowImage from "../assets/snow.jpg";
 import cloudImage from "../assets/cloud.jpg";
 import "./Weather.css"
 
-const Weather = () => {
 
+const Weather = () => {
     const [city,setCity]=useState("Tashkent");
 
+
+
+    
 
     const handleSearch=()=>{
 
