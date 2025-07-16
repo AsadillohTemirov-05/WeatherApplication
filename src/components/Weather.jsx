@@ -73,12 +73,15 @@ const Weather = () => {
              </div>
 
 
+
+
+
         <div className='weather-hours'>
             {foreCastHours?.map((hour,index)=>{
             const time=new Date(hour.time).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",hour12:false});
 
                 return (
-                       <div className="hour-card">
+                       <div className="hour-card" key={index}>
                 <div className='hour-time'>
                     <p>{time}</p>
                 </div>
