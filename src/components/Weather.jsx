@@ -14,34 +14,26 @@ import "./Weather.css"
 
 const Weather = () => {
     const [city,setCity]=useState("Tashkent");
-
-
-
+    const dispatch=useDispatch();
     
 
-    const handleSearch=()=>{
 
+    const handleSearch=()=>{
         if(city.trim()!==""){
-            dispatch(fetchForeCastByCity(city))
+            dispatch(fetchForeCastByCity(city));
         }
     }
 
-    const dispatch=useDispatch();
-
 
     useEffect(()=>{
-        dispatch(fetchForeCastByCity("Tashkent"))
+        dispatch(fetchForeCastByCity("Tashkent"));
+
     },[dispatch]);
 
 
     const foreCast=useSelector((state)=>state.weather.forecast);
-    console.log(foreCast);
-
-
     const foreCastHours=foreCast?.forecast?.forecastday[0]?.hour.slice(0,10);
-
     const weatherCondition=foreCast?.current?.condition?.text?.toLowerCase();
-
     let backgroundImage=sunnyImage;
     
     if(weatherCondition){
