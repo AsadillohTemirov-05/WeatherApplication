@@ -1,0 +1,180 @@
+/* Container layout */
+.weather-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Sections */
+.main-section,
+.side-section {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.main-section {
+  flex: 2;
+}
+
+.side-section {
+  flex: 1;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  gap: 8px; /* 👈 iconlar bilan input orasida joy */
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0; /* 👈 kerak, input ortiqcha kengaymasin */
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  outline: none;
+}
+
+.search-box .icon {
+  font-size: 20px;
+  flex-shrink: 0; /* 👈 icon siqilmasin */
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Temperature info */
+.temp-info h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.temp-info p {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Weather hours */
+.weather-hours {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-top: 15px;
+}
+
+.hour-card {
+  flex: 0 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.hour-card img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Forecast days */
+.forecast-days {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.forecast-heading {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.forecast-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.forecast-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1 1 60%;
+  min-width: 200px;
+}
+
+.forecast-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.details h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.details p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #eee;
+}
+
+.forecast-temp {
+  flex: 1 1 35%;
+  text-align: right;
+  min-width: 120px;
+}
+
+.temp-display h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .weather-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forecast-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .forecast-temp {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .search-box input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .search-box .icon {
+    font-size: 18px;
+  }
+}
