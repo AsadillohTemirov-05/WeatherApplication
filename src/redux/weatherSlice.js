@@ -7,6 +7,7 @@ const BASE_URL="http://api.weatherapi.com/v1";
 
 
 
+
 export const fetchForeCastByCity=createAsyncThunk(
     "weather/fetchForecastByCity",
     async (city)=>{

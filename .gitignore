@@ -13,7 +13,7 @@ dist
 dist-ssr
 *.local
 
-# Environment variables
+# Environment Variables
 .env
 
 
