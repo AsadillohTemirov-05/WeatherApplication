@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { BiSearch } from 'react-icons/bi'
-import { BsCloud } from 'react-icons/bs'
 import { FaLocationDot, FaWind } from 'react-icons/fa6'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchForeCastByCity } from '../redux/weatherSlice';

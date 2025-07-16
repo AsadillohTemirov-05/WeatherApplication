@@ -32,12 +32,12 @@
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 20px;
-  gap: 8px; /* 👈 iconlar bilan input orasida joy */
+  gap: 8px;
 }
 
 .search-box input {
   flex: 1;
-  min-width: 0; /* 👈 kerak, input ortiqcha kengaymasin */
+  min-width: 0; 
   border: none;
   background: transparent;
   color: white;
@@ -90,7 +90,7 @@
   height: 40px;
 }
 
-/* Forecast days */
+
 .forecast-days {
   margin-top: 20px;
   display: flex;
