@@ -14,7 +14,7 @@ import "./Weather.css"
 
 const Weather = () => {
 
-    const [city,setCity]=useState("");
+    const [city,setCity]=useState("Tashkent");
 
 
     const handleSearch=()=>{
