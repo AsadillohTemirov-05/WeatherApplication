@@ -10,8 +10,6 @@ console.log(API_KEY);
 console.log(BASE_URL);
 
 
-
-
 export const fetchForeCastByCity=createAsyncThunk(
     "weather/fetchForecastByCity",
     async (city)=>{
