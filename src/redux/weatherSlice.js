@@ -1,11 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios";
 
-const API_KEY=import.meta.env.VITE_WEATHER_API_KEY;
-const BASE_URL=import.meta.env.VITE_BASE_URL;
-console.log(API_KEY);
-console.log(BASE_URL);
 
+const API_KEY="a00cd151c352465b8cc94726251607";
+const BASE_URL="http://api.weatherapi.com/v1";
 
 
 
